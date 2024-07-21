@@ -1,0 +1,29 @@
+﻿生成启动时间为 2018/6/10 12:22:05。
+     1>项目“G:\VC教程\VC++大作业\VC++大作业\VC++大作业.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\VC++大作业.lastbuildstate”。
+       InitializeBuildStatus:
+         正在对“Debug\VC++大作业.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         F:\VS2010（64&32bit）\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\VC++大作业.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\VS2010（64&32bit）\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\VC++大作业.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "VC++大作业.cpp" "VC++大作业Dlg.cpp"
+         VC++大作业Dlg.cpp
+         VC++大作业.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\VC++大作业.res" "VC++大作业.rc" 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\VC++大作业.exe.embed.manifest.res" "Debug\VC++大作业_manifest.rc" 
+       Link:
+         F:\VS2010（64&32bit）\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\VC教程\VC++大作业\Debug\VC++大作业.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\VC++大作业.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\VC教程\VC++大作业\Debug\VC++大作业.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\VC教程\VC++大作业\Debug\VC++大作业.lib" /MACHINE:X86 "Debug\VC++大作业.res"
+         "Debug\VC++大作业.exe.embed.manifest.res"
+         Debug\stdafx.obj
+         "Debug\VC++大作业.obj"
+         "Debug\VC++大作业Dlg.obj"
+     1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏
+     1>已完成生成项目“G:\VC教程\VC++大作业\VC++大作业\VC++大作业.vcxproj”(rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.71
