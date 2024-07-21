@@ -1,0 +1,28 @@
+
+<a name="wRps3"></a>
+## 云key泄露方式利用
+华为云的 OBS Browser 登陆不对的时候，可以选择其他存储服务登陆<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1649308490610-031d6614-1a84-4783-8174-713231713e80.png#averageHue=%23f5f7e0&clientId=uc274ad3b-b9a3-4&from=paste&height=732&id=u8ddcd485&originHeight=915&originWidth=1460&originalType=binary&ratio=1&rotation=0&showTitle=false&size=114042&status=done&style=none&taskId=ud2abb598-7b7c-46f2-b02a-72dcadc972f&title=&width=1168)
+
+阿里云的OSS登陆方式<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1649308578392-07d401c4-2a86-422e-8aeb-321d112c30d1.png#averageHue=%23ececec&clientId=uc274ad3b-b9a3-4&from=paste&height=703&id=u3cface45&originHeight=879&originWidth=1530&originalType=binary&ratio=1&rotation=0&showTitle=false&size=86781&status=done&style=none&taskId=u37418d6d-2ffa-4051-8516-2d3ef574bea&title=&width=1224)
+
+行云管家登录方式(先用qq、微信登陆→然后用泄露的key登陆<br />[https://yun.cloudbility.com/login.html](https://yun.cloudbility.com/login.html)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1661268868297-c4c69478-df63-47f5-b05e-ca08e40da7d6.png#averageHue=%23264a8d&clientId=ue3ebe7c1-ea20-4&from=paste&height=712&id=u54SW&originHeight=890&originWidth=1662&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1573744&status=done&style=none&taskId=uf76c56cf-aed3-4a1a-8929-7986b15af63&title=&width=1329.6)
+
+<a name="N8u8g"></a>
+## 命令执行工具
+[https://github.com/teamssix/cf/releases](https://github.com/teamssix/cf/releases)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1657365560705-a3b6338e-62e7-4bff-bd28-f090457412ec.png#averageHue=%2303285a&clientId=u7693b8b9-f44b-4&from=paste&height=148&id=u15435ae4&originHeight=170&originWidth=760&originalType=binary&ratio=1&rotation=0&showTitle=false&size=31344&status=done&style=none&taskId=u7cef3a7f-4878-455a-8fd2-154aa2790b9&title=&width=663)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1657365574810-0dd10f83-51bc-44f2-b441-e428f44c68fa.png#averageHue=%23012557&clientId=u7693b8b9-f44b-4&from=paste&height=508&id=u46d9f622&originHeight=635&originWidth=1898&originalType=binary&ratio=1&rotation=0&showTitle=false&size=71095&status=done&style=none&taskId=u5978be9f-9e24-4176-a5ab-75cc7f26817&title=&width=1518.4)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1657365587653-51fe7536-1391-4717-a029-e427d0b72591.png#averageHue=%23022659&clientId=u7693b8b9-f44b-4&from=paste&height=389&id=u9d2ef24b&originHeight=486&originWidth=760&originalType=binary&ratio=1&rotation=0&showTitle=false&size=64003&status=done&style=none&taskId=u4ec00b6a-baff-4d5b-a589-3bf0820f2b8&title=&width=608)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1657365671356-b46d42fa-7542-4721-862f-49ff764967e8.png#averageHue=%2303275a&clientId=u7693b8b9-f44b-4&from=paste&height=562&id=u82e7e821&originHeight=702&originWidth=979&originalType=binary&ratio=1&rotation=0&showTitle=false&size=102806&status=done&style=none&taskId=ucab5c973-e936-477e-b3d3-fc58fa802c3&title=&width=783.2)
+
+目前不知道这个控制台是什么原理，不清楚是重置了密码还是添加了用户<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1657365716371-cb95e41e-2adb-42e9-bbe7-e6dced70eeea.png#averageHue=%2303275a&clientId=u7693b8b9-f44b-4&from=paste&height=97&id=ud96e10c9&originHeight=121&originWidth=705&originalType=binary&ratio=1&rotation=0&showTitle=false&size=17077&status=done&style=none&taskId=uea1f70bb-79ae-4e1e-aa16-8dcae25e791&title=&width=564)
+
+<a name="ukxRd"></a>
+## 文章安全客(阿里云元数据地址
+这篇文章([https://www.anquanke.com/post/id/276542](https://www.anquanke.com/post/id/276542))让我长见识了，阿里云的元数据地址为[http://100.100.100.200/latest/meta-data](http://100.100.100.200/latest/meta-data%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B0%9D%E8%AF%95%E8%8E%B7%E5%8F%96%E4%B8%80%E4%B8%8B%E3%80%82) ,作者通过打开 ram/目录，在 [http://100.100.100.200/latest/meta-data/ram/security-credentials/laravel-test-role](http://100.100.100.200/latest/meta-data/ram/security-credentials/laravel-test-role) 下找到了临时访问凭证。 获取到了泄露的key然后拿到了云上十几台服务器权限
+
+攻击思路(阿里云SSRF→访问阿里云元数据获取key)<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1661269075110-1ff10566-5396-4245-ae46-519ba2caebcf.png#averageHue=%23e0eebf&clientId=ue3ebe7c1-ea20-4&from=paste&height=484&id=uf06f109c&originHeight=605&originWidth=1156&originalType=binary&ratio=1&rotation=0&showTitle=false&size=256170&status=done&style=none&taskId=ud0aad691-78fd-4748-bb46-59d6279e2f4&title=&width=924.8)
+
+阿里云元数据地址<br />URL：[http://100.100.100.200](http://100.100.100.200)<br />阿里官方文档<br />[https://help.aliyun.com/document\_detail/214777.htm?spm=a2c4g.11186623.0.0.777a4a07R5OHxw#concept-2078137](https://help.aliyun.com/document\_detail/214777.htm?spm=a2c4g.11186623.0.0.777a4a07R5OHxw#concept-2078137)
+
+腾讯云元数据地址<br />URL：[http://metadata.tencentyun.com/latest/meta-data/](http://metadata.tencentyun.com/latest/meta-data/)<br />腾讯云官方文档<br />[https://cloud.tencent.com/document/product/213/4934](https://cloud.tencent.com/document/product/213/4934)
+
+AWS元数据地址<br />URL：[http://169.254.169.254/latest/meta-data/](http://169.254.169.254/latest/meta-data/)<br />访问[http://169.254.169.254/latest/meta-data/iam/security-credentials/ec2-default-ssm/](http://169.254.169.254/latest/meta-data/iam/security-credentials/ec2-default-ssm/)<br />可以直接获取AccessKeyId和SecretAccessKey<br />官方文档[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html)
+
+ssrf通过文件导出功能利用的方法，通过图片导出功能点，svg标签ssrf获取元数据<br />[https://forum.butian.net/share/1497](https://forum.butian.net/share/1497)

@@ -1,0 +1,5 @@
+碰到asp.net默认页面的时候，得留意一下有没有api的功能点<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1664166266106-e9b843ab-c3f1-4242-8d0f-a7b6cba3179e.png#clientId=ud5767b6e-292e-4&from=paste&height=715&id=u693c6f49&originHeight=894&originWidth=1441&originalType=binary&ratio=1&rotation=0&showTitle=false&size=116977&status=done&style=none&taskId=u7e91d308-e012-4173-af2d-f6077f6f6fa&title=&width=1152.8)
+
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1664166361246-64631dfe-bec1-40c6-842d-b093029a755a.png#clientId=ud5767b6e-292e-4&from=paste&height=670&id=u1d0fe043&originHeight=837&originWidth=1436&originalType=binary&ratio=1&rotation=0&showTitle=false&size=126631&status=done&style=none&taskId=u5e897075-06df-447c-90ae-54d0657a38f&title=&width=1148.8)
+
+这些api接口可能会有漏洞sql、上传等等 可能就可以突破了<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1664166376567-37dfdab0-cfbf-4cd3-a718-d8397d1774b4.png#clientId=ud5767b6e-292e-4&from=paste&height=722&id=u34011611&originHeight=903&originWidth=991&originalType=binary&ratio=1&rotation=0&showTitle=false&size=85929&status=done&style=none&taskId=ua3acffd8-c3c4-4c72-b1ee-42a99de9c41&title=&width=792.8)

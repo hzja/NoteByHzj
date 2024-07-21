@@ -1,0 +1,7 @@
+越权测试很多时候都是看id、数值替换，但是有时候也可以是通过cookie去替换，例如高权限的功能点替换成低权限的cookie看看能不能导致越权这种问题发生，虽然jwt情况下会做的很好，但是还是要记录一下这种情况
+
+管理员账号才会有模板管理的图片上传权限,个人创建的普通权限是没有这个功能点的<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/1345801/1678286516991-56425da6-6db5-4243-8b6d-1e920350c415.png#averageHue=%2391928d&clientId=uc77c3f7f-c72d-4&from=paste&height=410&id=u2749a0be&originHeight=610&originWidth=1171&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=225985&status=done&style=none&taskId=u441241d0-02af-4b3c-90dc-df5e6728926&title=&width=787)
+
+例如：以下普通账号是没有上传功能点的，把普通账号的token认证复制<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/1345801/1678286572525-b4aa2727-c07f-4537-852d-0e49e33554fa.png#averageHue=%23e8eae6&clientId=uc77c3f7f-c72d-4&from=paste&height=510&id=u2b82c9bf&originHeight=638&originWidth=1173&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=587802&status=done&style=none&taskId=u71306714-556a-4128-9430-e5f3699abf2&title=&width=938.4)
+
+然后把管理员的token认证替换成普通成员的认证，可以越权上传图片的功能点<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/1345801/1678286627243-fd076419-c611-4984-adea-d0001529ac5e.png#averageHue=%23dbd5ce&clientId=uc77c3f7f-c72d-4&from=paste&height=489&id=u88c613cf&originHeight=611&originWidth=1131&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=494835&status=done&style=none&taskId=u4703f35a-8a68-4063-a736-c5e100143f2&title=&width=904.8)
