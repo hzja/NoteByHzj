@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\main.cpp(49,12): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\main.cpp(56,19): warning C4018: “<=”: 有符号/无符号不匹配
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\main.cpp(71,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\main.cpp(9,8): warning C4101: “result1”: 未引用的局部变量
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\main.cpp(9,17): warning C4101: “result2”: 未引用的局部变量
+  SaoleiHelp.vcxproj -> C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\Debug\SaoleiHelp.exe

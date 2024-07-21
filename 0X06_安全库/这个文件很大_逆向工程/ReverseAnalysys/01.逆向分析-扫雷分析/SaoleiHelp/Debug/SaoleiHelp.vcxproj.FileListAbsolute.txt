@@ -1,0 +1,2 @@
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\Debug\SaoleiHelp.exe
+C:\Users\xiuzhang\Desktop\扫雷分析\SaoleiHelp\Debug\SaoleiHelp.pdb

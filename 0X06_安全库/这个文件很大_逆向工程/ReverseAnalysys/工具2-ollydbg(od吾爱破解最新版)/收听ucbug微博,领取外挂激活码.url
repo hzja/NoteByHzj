@@ -1,0 +1,12 @@
+[DEFAULT]
+BASEURL=http://t.qq.com/Jimmy_Chan
+[DOC_EQQ_ProxySendIframe]
+BASEURL=http://t.web2.qq.com/proxy.html?v=20110331001
+ORIGURL=http://t.web2.qq.com/proxy.html?v=20110331001
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://t.qq.com/Jimmy_Chan
+IDList=
+IconFile=http://mat1.gtimg.com/www/mb/favicon.ico
+IconIndex=1
