@@ -1,0 +1,27 @@
+urldns其实在没学审计之前经常用会搭配上[http://www.dnslog.cn/](http://www.dnslog.cn/)一起来用，像web打点，隧道代理会经常用到。例如作来判断目标机器是否出网、不走icmp的话是否走dns、目标机是不是真正意义上的不出网，又或者在⽬标没有回显的时候，能够通过DNS请求得知是否存在反序列化漏洞
+
+在ysoserial中<br />**java -jar ysoserial.jar URLDNS "http://uey8lt.dnslog.cn"**<br />**<br />**<br />**利用链是如下四个步骤<br />**<br />_*   Gadget Chain:<br />*     HashMap.readObject()<br />*       HashMap.putVal()<br />*         HashMap.hash()<br />*           URL.hashCode()_<br />_<br />_
+<a name="zpC7X"></a>
+## Payload生成
+ysoserial生成payload的点主要在GeneratePayload，寻找入口点，可以在pom.xml文件中的mainClass标签
+
+![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613108833534-b0994030-689f-4641-a760-89ef8ff09186.png#align=left&display=inline&height=301&originHeight=602&originWidth=1369&size=48195&status=done&style=none&width=684.5)<br />传入Program arguments进行代码调试
+
+![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613108869747-de3b9ab6-9687-4c84-8ea1-8120807c7f4d.png#align=left&display=inline&height=314&originHeight=627&originWidth=1328&size=35548&status=done&style=none&width=664)<br />传入的payload，如果不为空，通过object进入serialize序列化输出。
+
+![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613109443401-8f493cd5-7bce-483a-9ffe-0702d7e79521.png#align=left&display=inline&height=227&originHeight=454&originWidth=1081&size=31658&status=done&style=none&width=540.5)
+
+
+
+<a name="6mxBS"></a>
+## 分析
+handler是被URLStreamHandler实例化的，是个多态语句。<br />HashMap实例化ht，相当于put也是用HashMap的put方法<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613057611809-82ccc0c9-b15d-4bd2-946f-42dd024ab7d5.png#align=left&display=inline&height=167&originHeight=335&originWidth=1270&size=24451&status=done&style=none&width=635)<br />handler、ht、u都是经过实例化属性的还没有一个正式的方法调用。直至ht.put，所以要跟进ht中的put方法，其实也就是进入HashMap类中，因为ht是被HashMap所实例化的。<br />跟进后可以发现，put方法主要是return一个putVal的方法，里边的参数值有hash(key)，key和value。<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613058303409-163613d2-fb62-4b80-8de2-c832edc26b35.png#align=left&display=inline&height=77&originHeight=102&originWidth=766&size=6566&status=done&style=none&width=575)<br />其实在前面URLDNS类中，put方法的两个参数主要是经过URL类实例化的u，还有传入的url值，所以在putVal中，key值得是u，value是url，而hash(key)指的是hash(u)
+
+![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613058541310-53e744ee-c864-4b85-b3e5-3539e37828be.png#align=left&display=inline&height=386&originHeight=515&originWidth=759&size=33623&status=done&style=none&width=569)<br />回到HashMap中，HashMap有个泛型，自动绑定了前面所说的key和value的对象 :<br />                                                                                                                        HashMap<K,V><br />↓<br />ht.put(u,url)
+
+并且HashMap类是要从Serializable接口中实现功能点，所以，如果这里存在readObject的话，就会存在反序列化。<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613060365339-30f5d549-f899-4f39-adae-c7c6857b8b1b.png#align=left&display=inline&height=183&originHeight=366&originWidth=899&size=22422&status=done&style=none&width=449.5)<br />全局搜readObject，在1392-1397行中可以看到key和value的值是经过readObject方法处理，并且处理完的key值是要传入hash方法中<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613060506435-a971257f-f9fb-4f68-ab88-7d4e0cb6f9f4.png#align=left&display=inline&height=137&originHeight=182&originWidth=732&size=11063&status=done&style=none&width=549)<br />putVal中的hash跟进看一看，来到了如下代码中，代码中的key是被Object实例化的，如果key值不为空，则进入hashCode方法中，可以跟进hashCode方法。在前面说过，key其实是值u，而u是被URL实例化的，所以这里的hashCode应该进入URL中的hashCode方法。<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613060964951-41c79ba9-af09-4c06-8573-008ec6ecb951.png#align=left&display=inline&height=82&originHeight=109&originWidth=801&size=6376&status=done&style=none&width=601)<br />进入URL类中全局搜hashCode方法，如果hashCode值不为-1则进入handler，handler在URLDNS类中被URLStreamHandler实例化<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613061657216-db6b526a-8fb0-481b-8fc7-e0d6e2505242.png#align=left&display=inline&height=343&originHeight=457&originWidth=635&size=26141&status=done&style=none&width=476)<br />直接跟进handler中的hashCode，hashCode方法中，都是给h赋值，只有getHostAddress方法，所以对getHostAddress方法跟进<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613062048146-cae8639a-07d1-467f-8700-dc965857ea6c.png#align=left&display=inline&height=444&originHeight=592&originWidth=744&size=30669&status=done&style=none&width=558)<br />来到了这一行中<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613062162872-e1a16173-eab9-45fd-8072-8aa0e853de52.png#align=left&display=inline&height=323&originHeight=431&originWidth=709&size=17868&status=done&style=none&width=532)<br />看java的文档，InetAddress.getByName，是可以确定主机名称的IP地址。 该方法会使用远程请求，进行获取主机的ip，那么这时候就会触发一次请求，到了这里我们的dnslog平台，就可以收到响应了。这就是这个URLDNS链的一个触发点。<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613062275796-31f23bc4-362f-40e0-a95a-fefaf59cad88.png#align=left&display=inline&height=324&originHeight=648&originWidth=1517&size=49250&status=done&style=none&width=758.5)<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613062336376-bb878ea1-1be2-4948-a203-4f4ae5df535d.png#align=left&display=inline&height=230&originHeight=460&originWidth=1076&size=30118&status=done&style=none&width=538)
+
+
+----------<br />所以urldns链主要是因为HashMap这个类的实现中存在反序列化readObject()方法，完整的利用链如下<br />![图片.png](https://cdn.nlark.com/yuque/0/2021/png/1345801/1613097575677-ec206f62-a9d9-4033-b49f-dac202f0d650.png#align=left&display=inline&height=191&originHeight=255&originWidth=638&size=11242&status=done&style=none&width=479)
+
+

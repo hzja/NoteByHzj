@@ -1,0 +1,1 @@
+这几天一直在跌打滚爬摸索着写一个界面化横向工具，无奈水平不行，写得太过拉跨，效果如下所示<br />![image.png](https://cdn.nlark.com/yuque/0/2022/png/1345801/1645546817098-ff3bf08c-d09a-4a1f-8ace-6916b8355bf4.png#clientId=u282fed7b-e781-4&from=paste&height=343&id=u1612012d&originHeight=500&originWidth=750&originalType=binary&ratio=1&size=27564&status=done&style=none&taskId=u73c8ad1c-d04a-46e8-8c3d-ed295992f03&width=515)
