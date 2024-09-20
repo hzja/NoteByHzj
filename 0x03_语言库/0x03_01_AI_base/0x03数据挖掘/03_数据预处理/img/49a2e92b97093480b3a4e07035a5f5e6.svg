@@ -1,0 +1,12 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.613ex" height="2.843ex" style="vertical-align: -0.338ex;" viewBox="0 -1078.4 694.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">\widetilde{\Lambda}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMAIN-39B" d="M320 708Q326 716 340 716H348H355Q367 716 372 708Q374 706 423 547T523 226T575 62Q581 52 591 50T634 46H661V0H653Q644 3 532 3Q411 3 390 0H379V46H392Q464 46 464 65Q463 70 390 305T316 539L246 316Q177 95 177 84Q177 72 198 59T248 46H253V0H245Q230 3 130 3Q47 3 38 0H32V46H45Q112 51 127 91Q128 92 224 399T320 708Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-7E" d="M179 251Q164 251 151 245T131 234T111 215L97 227L83 238Q83 239 95 253T121 283T142 304Q165 318 187 318T253 300T320 282Q335 282 348 288T368 299T388 318L402 306L416 295Q375 236 344 222Q330 215 313 215Q292 215 248 233T179 251Z"></path>
+<path stroke-width="1" id="E1-MJSZ1-2DC" d="M374 597Q337 597 269 627T160 658Q101 658 34 606L24 597L12 611Q1 624 1 626Q1 627 27 648T55 671Q120 722 182 722Q219 722 286 692T395 661Q454 661 521 713L531 722L543 708Q554 695 554 693Q554 692 528 671T500 648Q434 597 374 597Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMAIN-39B" x="0" y="0"></use>
+ <use xlink:href="#E1-MJSZ1-2DC" x="69" y="228"></use>
+</g>
+</svg>

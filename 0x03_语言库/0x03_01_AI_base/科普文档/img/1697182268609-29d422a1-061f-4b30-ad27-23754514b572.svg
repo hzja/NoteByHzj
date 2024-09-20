@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="700"
+   height="700"
+   id="svg1398">
+  <defs
+     id="defs1401" />
+  <g
+     style="display:inline"
+     id="layer2">
+    <path
+       d="M 488.30109 373.17453 A 205.85806 205.85806 0 1 1  76.584961,373.17453 A 205.85806 205.85806 0 1 1  488.30109 373.17453 z"
+       transform="matrix(1.322907,0,0,1.322907,-76.80715,-109.5599)"
+       style="opacity:1;color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5118221;stroke-linecap:square;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="path1409" />
+    <path
+       d="M 297.12661,28.542209 L 297.12661,679.22644"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2284" />
+    <path
+       d="M 2.303307,384.40315 L 604.61809,384.40315"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2286" />
+    <path
+       d="M 297.1266,384.40315 L 390.98637,158.10323"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2289" />
+    <path
+       d="M 296.55078,6.3728788 L 304.37473,35.572275 L 289.06503,35.572275 L 296.55078,6.3728788 z "
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       id="path2304" />
+    <path
+       d="M 632.68528,385.24697 L 603.48589,393.07092 L 603.48589,377.76122 L 632.68528,385.24697 z "
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       id="path3180" />
+    <text
+       x="267.26489"
+       y="420.86304"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Times New Roman"
+       id="text3183"
+       xml:space="preserve"><tspan
+         x="267.26489"
+         y="420.86304"
+         id="tspan3185">0</tspan></text>
+    <text
+       x="307.35513"
+       y="420.99319"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3187"
+       xml:space="preserve"><tspan
+         x="307.35513"
+         y="420.99319"
+         id="tspan3189">cos <tspan
+   style="font-size:37.36190414px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman"
+   id="tspan3191">φ</tspan></tspan></text>
+    <text
+       x="315.31839"
+       y="374.06613"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3193"
+       xml:space="preserve"><tspan
+         x="315.31839"
+         y="374.06613"
+         id="tspan3195"><tspan
+           style="font-size:37.36190414px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman"
+           id="tspan3197">φ</tspan></tspan></text>
+    <text
+       x="407.67014"
+       y="116.70425"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3199"
+       xml:space="preserve"><tspan
+         x="407.67014"
+         y="116.70425"
+         id="tspan3201">e</tspan></text>
+    <text
+       x="426.35248"
+       y="99.233963"
+       style="font-size:28.54417038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3207"
+       xml:space="preserve"><tspan
+         x="426.35248"
+         y="99.233963"
+         id="tspan3209">i<tspan
+   style="font-size:28.54417038px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman"
+   id="tspan3211">φ</tspan></tspan></text>
+    <text
+       x="576.36462"
+       y="420.10419"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3213"
+       xml:space="preserve"><tspan
+         x="576.36462"
+         y="420.10419"
+         id="tspan3215">1</tspan></text>
+    <text
+       x="611.49194"
+       y="431.57697"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3223"
+       xml:space="preserve"><tspan
+         x="611.49194"
+         y="431.57697"
+         id="tspan3225">Re</tspan></text>
+    <text
+       x="240.65955"
+       y="49.228024"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3227"
+       xml:space="preserve"><tspan
+         x="240.65955"
+         y="49.228024"
+         id="tspan3229">Im</tspan></text>
+    <text
+       x="229.17905"
+       y="102.24803"
+       style="font-size:12.8727293px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+       id="text3231"
+       xml:space="preserve"><tspan
+         x="229.17905"
+         y="102.24803"
+         id="tspan3233"></tspan></text>
+    <text
+       x="268.29922"
+       y="101.05243"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3235"
+       xml:space="preserve"><tspan
+         x="268.29922"
+         y="101.05243"
+         id="tspan3237">i</tspan></text>
+    <text
+       x="410.45679"
+       y="280.91873"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text3243"
+       xml:space="preserve"><tspan
+         x="410.45679"
+         y="280.91873"
+         id="tspan3245">sin <tspan
+   style="font-size:37.36190414px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman"
+   id="tspan3247">φ</tspan></tspan></text>
+    <path
+       d="M 401.47061,132.97005 L 401.47061,385.41608"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3249" />
+    <path
+       d="M 542.90546,325.0796 A 33.388023,31.148582 0 0 1 563.52346,354.1268"
+       transform="matrix(1.656472,0,0,1.656472,-582.1431,-202.5758)"
+       style="opacity:1;color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.2073853;stroke-linecap:square;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="path3251" />
+    <path
+       d="M 401.43775,133.35807 L 396.96733,163.25513 L 382.92787,157.14936 L 401.43775,133.35807 z "
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       id="path4126" />
+    <text
+       x="453.02463"
+       y="116.70425"
+       style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Times New Roman"
+       id="text5874"
+       xml:space="preserve"><tspan
+         x="453.02463"
+         y="116.70425"
+         id="tspan5876">= cos <tspan
+   style="font-size:37.36190414px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman"
+   id="tspan5878">φ<tspan
+   style="font-size:37.36190414px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman"
+   id="tspan5880"> + i sin </tspan>φ</tspan></tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<a name="bihRP"></a>
+## 前言
+在 SpringBoot 框架中，使用最多的是 Tomcat，这是 SpringBoot 默认的容器技术，而且是内嵌式的 Tomcat。<br />同时，SpringBoot 也支持 Undertow 容器，可以很方便的用 Undertow 替换 Tomcat，而 Undertow 的性能和内存使用方面都优于 Tomcat，那如何使用 Undertow 技术呢？本文将为大家细细讲解。
+<a name="LvqFz"></a>
+## SpringBoot 中的 Tomcat 容器
+SpringBoot 可以说是目前最火的 Java Web 框架了。它将开发者从繁重的 xml 解救了出来，让开发者在几分钟内就可以创建一个完整的 Web 服务，极大的提高了开发者的工作效率。<br />Web 容器技术是 Web 项目必不可少的组成部分，因为任何 Web 项目都要借助容器技术来运行起来。<br />在 SpringBoot 框架中，使用最多的是 Tomcat，这是 SpringBoot 默认的容器技术，而且是内嵌式的 Tomcat。
+<a name="oGQKA"></a>
+## SpringBoot 设置 Undertow
+对于 Tomcat 技术，Java 程序员应该都非常熟悉，它是 Web 应用最常用的容器技术。<br />最早的开发的项目基本都是部署在 Tomcat 下运行，那除了 Tomcat 容器，SpringBoot 中还可以使用什么容器技术呢？<br />没错，就是题目中的 Undertow 容器技术。SrpingBoot 已经完全继承了 Undertow 技术，只需要引入 Undertow 的依赖即可，如下图所示：<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234695975-7a57fb45-dc3e-4176-a821-1f93ee71cd96.png#averageHue=%23312e2b&clientId=ud7b56084-6a42-4&from=paste&id=ufb0d344f&originHeight=590&originWidth=1080&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=uf6ec4449-b852-4a7f-ac6f-3e29410f669&title=)<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234695989-614f02ce-6af8-4d6e-972c-c1fe5a671543.png#averageHue=%232f2e2c&clientId=ud7b56084-6a42-4&from=paste&id=u88b3440c&originHeight=162&originWidth=1080&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=ud20322ab-8d62-46bd-a044-b3ffb3ae0a2&title=)<br />配置好以后，启动应用程序，发现容器已经替换为 Undertow。<br />那为什么需要替换 Tomcat 为 Undertow 技术呢？
+<a name="QED6p"></a>
+## Tomcat 与 Undertow 的优劣对比
+Tomcat 是 Apache 基金下的一个轻量级的 Servlet 容器，支持 Servlet 和 JSP。<br />Tomcat 具有 Web 服务器特有的功能，包括 Tomcat 管理和控制平台、安全局管理和 Tomcat 阀等。Tomcat 本身包含了 HTTP 服务器，因此也可以视作单独的 Web 服务器。<br />但是，Tomcat 和 ApacheHTTP 服务器不是一个东西，ApacheHTTP 服务器是用 C 语言实现的 HTTP Web 服务器。Tomcat 是完全免费的，深受开发者的喜爱。<br />Undertow 是 Red Hat 公司的开源产品, 它完全采用 Java 语言开发，是一款灵活的高性能 Web 服务器，支持阻塞 IO 和非阻塞 IO。<br />由于 Undertow 采用 Java 语言开发，可以直接嵌入到 Java 项目中使用。同时， Undertow 完全支持 Servlet 和 Web Socket，在高并发情况下表现非常出色。<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234695966-204b069a-2f57-4bec-9b8f-11a0c7f6c295.png#averageHue=%23ba9b36&clientId=ud7b56084-6a42-4&from=paste&id=u48e8015d&originHeight=395&originWidth=858&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=u7f8b90e1-fe6d-45e5-b5dd-d0004a6eba0&title=)<br />在相同机器配置下压测 Tomcat 和 Undertow，得到的测试结果如下所示：
+<a name="IgZsB"></a>
+### | QPS 测试结果对比
+Tomcat：<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234695967-0f854ed6-3d23-4ff6-aebe-e96e6bf4ecad.png#averageHue=%23f0f0f0&clientId=ud7b56084-6a42-4&from=paste&id=uc2080be8&originHeight=176&originWidth=1080&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=u91e06846-82bb-411b-9383-66f928253bb&title=)<br />Undertow：<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234695924-2001fa68-5bc8-4432-8b99-1c85cff6f9e0.png#averageHue=%23efefef&clientId=ud7b56084-6a42-4&from=paste&id=u7a4843db&originHeight=167&originWidth=1080&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=ufd48c11d-bc2e-4890-92f1-2e59e06388a&title=)
+<a name="e45RZ"></a>
+### | 内存使用对比
+Tomcat：<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234696399-c440f950-80c6-4764-b1c2-4f92956742fc.png#averageHue=%23fafafa&clientId=ud7b56084-6a42-4&from=paste&id=ud69d8c99&originHeight=178&originWidth=1080&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=u4d557359-c963-47b8-ba52-8caaf80ff7f&title=)<br />Undertow：<br />![](https://cdn.nlark.com/yuque/0/2023/png/396745/1699234696382-a0bc07cf-cb32-4536-a22a-00a8ed70b41b.png#averageHue=%23fbfbfb&clientId=ud7b56084-6a42-4&from=paste&id=ua93b2971&originHeight=182&originWidth=1080&originalType=url&ratio=2.5&rotation=0&showTitle=false&status=done&style=none&taskId=ue2326835-fce3-40ff-96a6-1bce3c5da57&title=)<br />通过测试发现，在高并发系统中，Tomcat 相对来说比较弱。在相同的机器配置下，模拟相等的请求数，Undertow 在性能和内存使用方面都是最优的。<br />并且 Undertow 新版本默认使用持久连接，这将会进一步提高它的并发吞吐能力。所以，如果是高并发的业务系统，Undertow 是最佳选择。<br />SpingBoot 中既可以使用 Tomcat 作为 Http 服务，也可以用 Undertow 来代替。
+<a name="frIDn"></a>
+## 最后
+Undertow 在高并发业务场景中，性能优于 Tomcat。所以，如果系统是高并发请求，不妨使用一下 Undertow，会发现系统性能会得到很大的提升。
