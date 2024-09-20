@@ -1,0 +1,27 @@
+﻿生成启动时间为 2018/5/6 20:16:33。
+     1>项目“G:\VC教程\VC++作业\2\2\2.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\2.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         f:\VS2010（64&32bit）\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\2.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt 2.cpp 2Dlg.cpp
+         2Dlg.cpp
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         2.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\2.res" 2.rc 
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         f:\VS2010（64&32bit）\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\VC教程\VC++作业\2\Debug\2.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\VC教程\VC++作业\2\Debug\2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\VC教程\VC++作业\2\Debug\2.lib" /MACHINE:X86 Debug\2.res
+         Debug\2.exe.embed.manifest.res
+         Debug\2.obj
+         Debug\2Dlg.obj
+         Debug\stdafx.obj
+     1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏
+     1>已完成生成项目“G:\VC教程\VC++作业\2\2\2.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.43

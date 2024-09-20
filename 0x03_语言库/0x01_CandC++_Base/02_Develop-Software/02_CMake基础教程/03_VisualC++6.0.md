@@ -1,0 +1,3 @@
+# C
+
+[Visual C++ 6.0 （完整绿色版）【英文】.rar](https://www.yuque.com/attachments/yuque/0/2021/rar/396745/1638977308888-d8773415-852d-4f76-8458-97f7315ffd73.rar?_lake_card=%7B%22src%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fattachments%2Fyuque%2F0%2F2021%2Frar%2F396745%2F1638977308888-d8773415-852d-4f76-8458-97f7315ffd73.rar%22%2C%22name%22%3A%22Visual%20C%20%20%206.0%20%EF%BC%88%E5%AE%8C%E6%95%B4%E7%BB%BF%E8%89%B2%E7%89%88%EF%BC%89%E3%80%90%E8%8B%B1%E6%96%87%E3%80%91.rar%22%2C%22size%22%3A47461409%2C%22type%22%3A%22%22%2C%22ext%22%3A%22rar%22%2C%22status%22%3A%22done%22%2C%22taskId%22%3A%22u7343f529-fe1a-4524-99c1-dd117b3f36a%22%2C%22taskType%22%3A%22upload%22%2C%22id%22%3A%22ufe791fde%22%2C%22card%22%3A%22file%22%7D)
